@@ -29,6 +29,7 @@ def webcam_detect():
         key="video-sendonly",
         mode=WebRtcMode.SENDONLY,
         # rtc_configuration={"iceServers": get_ice_servers()},
+        rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
         media_stream_constraints={"video": True},
     )
     img_container = {"Angry":0, "Disgust":0, "Fear":0, "Happy":0, "Sad":0, "Surprise":0, "Neutral":0}
