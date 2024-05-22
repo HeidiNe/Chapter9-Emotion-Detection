@@ -77,7 +77,7 @@ def webcam_input(selected_emotion):
     # Create capture button
     if ctx:
         #Create path
-        relative_path = r"Data\\train.csv"
+        relative_path = r"Data/train.csv"
         defaul_dir = os.path.dirname(__file__)
         file_path = os.path.join(defaul_dir, relative_path)
 
