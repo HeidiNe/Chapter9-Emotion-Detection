@@ -64,7 +64,7 @@ def webcam_input(selected_emotion):
         video_frame_callback=video_frame_callback,
         mode=WebRtcMode.SENDRECV,
         # rtc_configuration={"iceServers": get_ice_servers()},
-        rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+        # rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
         media_stream_constraints={
                 "video": {"frameRate": {"ideal": 5}},
                 "video": True, "audio": False
