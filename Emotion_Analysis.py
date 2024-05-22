@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 def webcam_detect():
     #Create path weight
-    relative_path = r"Model\weight_face_emotion_1.pt"
+    relative_path = r"Model\\weight_face_emotion_1.pt"
     defaul_dir = os.path.dirname(__file__)
     file_path_weight = os.path.join(defaul_dir, relative_path)
 

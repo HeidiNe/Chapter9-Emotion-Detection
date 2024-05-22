@@ -10,12 +10,12 @@ import csv
 import pandas as pd
 
 #Create path trainTrue
-relative_path = r"Data\trainTrue.csv"
+relative_path = r"Data\\trainTrue.csv"
 defaul_dir = os.path.dirname(__file__)
 file_path_trainTrue = os.path.join(defaul_dir, relative_path)  
 
 #Create path TrainFalse
-relative_path = r"Data\trainFalse.csv"
+relative_path = r"Data\\trainFalse.csv"
 defaul_dir = os.path.dirname(__file__)
 file_path_trainFalse = os.path.join(defaul_dir, relative_path)   
 
@@ -37,7 +37,7 @@ def Detect_img():
     st.title("Upload image")
 
     #Create path weight
-    relative_path = r"Model\weight_face_emotion_1.pt"
+    relative_path = r"Mode\\weight_face_emotion_1.pt"
     defaul_dir = os.path.dirname(__file__)
     file_path_weight = os.path.join(defaul_dir, relative_path)
 
